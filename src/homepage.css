@@ -1,0 +1,71 @@
+.content {
+  width: 80%;
+  padding-top: 3%;
+  margin-left: 4%;
+  height: auto;
+}
+
+.content h1{
+  text-align: center;
+}
+
+.search-container{
+  margin-left: 10%;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 50px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #606c38;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.about{
+  height: 40vh;
+  width: 120%;
+  padding: 5% 30% 5% 30%;
+  text-align: center;
+  background-color: #283618;
+  color: white;
+}
+
+#about-fade-in h1, #about-fade-in p {
+  opacity: 0; /* initial opacity is 0, so the elements are invisible */
+  transform: translateX(-1000px); /* initial position is off-screen to the left */
+  transition: opacity 2.0s, transform 2.0s; /* transition effect for opacity and transform */
+}
+
+#about-fade-in h1.animate, #about-fade-in p.animate {
+  opacity: 1; /* when the animation is triggered, opacity will be 1 */
+  transform: translateX(0); /* when the animation is triggered, move the elements into view */
+}
+
+.about h1{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about p{
+  font-size: 20px; 
+  margin-bottom: 20px;
+}
+
+.about:hover{
+  background-color: #606c38;
+}
